@@ -21,8 +21,8 @@ def debug_task(self):
 
 
 app.conf.beat_schedule = {
-    'fetch_video': {
-        'task' : 'fetch_video',
-        'schedule': crontab(minute='*/5'),
-    }
+    # 'fetch_video': {
+    #     'task' : 'fetch_video',
+    #     'schedule': crontab(minute='*/5'),
+    # }
 }

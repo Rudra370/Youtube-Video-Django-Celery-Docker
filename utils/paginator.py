@@ -5,8 +5,8 @@ class PaginatorService:
 
     def __init__(self, queryset: QuerySet, page: int=1, page_size: int=10, orphans: int=0):
         self.queryset = queryset
-        self.page_size = page_size
-        self.page = page
+        self.page_size = int(f"{page_size}")
+        self.page = int(f"{page}")
         self.orphans = orphans
         self.page_obj = None
     
